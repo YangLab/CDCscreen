@@ -21,9 +21,13 @@ git clone https://github.com/xueweireally/CDCscreen
 ```
 
 ## Usage
+```bash
 Usage: sh run_CDCscreen.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq
+```
 
 ### Example
+```bash
 sh run_CDCscreen.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq
+```
 
 * D1_rep1_R1.fq, D1_rep1_R2.fq, D1_rep2_R1.fq, D1_rep2_R2.fq, D30_rep1_R1.fq, D30_rep1_R2.fq, D30_rep2_R1.fq and D30_rep2_R2.fq were downloaded from NCBI GEO dataset
