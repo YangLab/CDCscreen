@@ -8,12 +8,12 @@ A computational pipeline for **C**as13**d**-mediated **c**ircRNA **screen** (CDC
 ## Installation requirements
 
 * Software
-- [perl] (version 5.26.2)
-- [bowtie] (version 1.1.2)
-- cutadapt (version 1.18)
-- samtools (version: 1.9)
-- MAGeCK (version 0.5.9.2)
-- R (version 3.5.1)
+    - [perl] (version 5.26.2)
+    - [bowtie] (version 1.1.2)
+    - cutadapt (version 1.18)
+    - samtools (version: 1.9)
+    - MAGeCK (version 0.5.9.2)
+    - R (version 3.5.1)
 
 ## Date requirements
 * Cas13d BSJ-gRNA reference sequences
