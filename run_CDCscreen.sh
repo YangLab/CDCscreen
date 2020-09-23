@@ -7,7 +7,7 @@ fi
 # 0. bowtie-build index gRNA reference sequences (bowtie version 1.1.2)
 mkdir 00_ref_gRNA_seq
 cd 00_ref_gRNA_seq
-cp ../ref_gRNA_seq.fa .
+cp $1 ref_gRNA_seq.fa
 bowtie-build ref_gRNA_seq.fa ref_gRNA_seq
 
 cd ..
@@ -16,15 +16,15 @@ cd ..
 # 1.1 ln -s D1 rep1 and rep2, and D30 rep1 and rep2 fastq(or fastq.gz)
 mkdir 01_gRNA_DNA_seq
 cd 01_gRNA_DNA_seq
-ln -s $1 01_D1_rep1_R1.fastq.gz
-ln -s $2 01_D1_rep1_R2.fastq.gz
-ln -s $3 01_D1_rep2_R1.fastq.gz
-ln -s $4 01_D1_rep2_R2.fastq.gz
+ln -s $3 01_D1_rep1_R1.fastq.gz
+ln -s $4 01_D1_rep1_R2.fastq.gz
+ln -s $5 01_D1_rep2_R1.fastq.gz
+ln -s $6 01_D1_rep2_R2.fastq.gz
 
-ln -s $5 01_D30_rep1_R1.fastq.gz
-ln -s $6 01_D30_rep1_R2.fastq.gz
-ln -s $7 01_D30_rep2_R1.fastq.gz
-ln -s $8 01_D30_rep2_R2.fastq.gz
+ln -s $7 01_D30_rep1_R1.fastq.gz
+ln -s $8 01_D30_rep1_R2.fastq.gz
+ln -s $9 01_D30_rep2_R1.fastq.gz
+ln -s $10 01_D30_rep2_R2.fastq.gz
 
 # 1.2 remove adapter sequences (cutadapt version 1.18)
 # For R1 3' (TTTTTTAAGCTTGGCGTAACTAGATCT), 5' (CCCTACCAACTGGTCGGGGTTTGAAAC)
@@ -145,7 +145,7 @@ cd ..
 mkdir 05_CDCscreen
 cd 05_CDCscreen
 # 5.1 circRNA expression
-cp ../FPBcirc.txt 01_FPBcirc.txt
+cp $2 01_FPBcirc.txt
 
 # 5.2 circRNA permutation test P value
 cp ../04_MAGeCK/04_mageck.gene_summary.txt 02_gene_summary.txt
