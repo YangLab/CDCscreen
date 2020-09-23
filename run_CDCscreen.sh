@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 if [ ! $# = 8 ]; then
-    echo "Usage: `basename $0` D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq";
+    echo "Usage: `basename $0` ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq";
     exit 0;
 fi
 
@@ -77,7 +77,7 @@ mkdir 02_bowtie_align
 cd 02_bowtie_align
 ls ../01_gRNA_DNA_seq/ |grep "trimmed" |awk -F"." '{print "bowtie ../00_ref_gRNA_seq/ref_gRNA_seq ../01_gRNA_DNA_seq/"$0" -S 01_"$1".sam -p 12 -v 3 -m 1 -k 1 2>log_01_"$1".txt"}' |sed 's/01_02/01/g' |sh
 
-# 2.2 sam to bam (samtools Version: 1.9)
+# 2.2 sam to bam (samtools version: 1.9)
 ls |grep "sam" |awk -F"." '{print "samtools view -bh -F 4 "$1".sam |samtools sort -o 02_"$1".bam"}' |sed 's/02_01/02/g' |sh
 
 # 2.3 select read ID
@@ -121,7 +121,7 @@ awk '{FS="\t";OFS="\t"}{print $1,$2,$3,$4,$5,$6,$7,($4+0.01)/($2+0.01),($5+0.01)
 cd ..
 
 
-# 4. MAGeCK
+# 4. MAGeCK (version 0.5.9.2)
 mkdir 04_MAGeCK
 cd 04_MAGeCK
 
