@@ -8,8 +8,8 @@ A computational pipeline for **C**as13**d**-mediated **c**ircRNA **screen** (CDC
 ## Installation requirements
 
 * Software
-- perl (version 5.26.2)
-- bowtie (version 1.1.2)
+- [perl] (version 5.26.2)
+- [bowtie] (version 1.1.2)
 - cutadapt (version 1.18)
 - samtools (version: 1.9)
 - MAGeCK (version 0.5.9.2)
@@ -39,6 +39,7 @@ Usage: sh run_CDCscreen.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.
 sh run_CDCscreen.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq
 ```
 
+### Input
 * Test Cas13d BSJ-gRNA reference sequences file was in directory [test_data]
 - test_data/ref_gRNA_seq.fa
 
@@ -55,5 +56,16 @@ sh run_CDCscreen.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc.txt D1_rep1_R1.f
 - D30_rep2_R1.fq, Fastq file of day 30 biology replicate 2 R1
 - D30_rep2_R2.fq, Fastq file of day 30 biology replicate 2 R2
 
+### Output
+* output_dir/quant/quant.txt
 
 
+
+
+
+## Citation
+**Siqi Li#, Xiang Li#, Wei Xue#, Lin Zhang#, Liang-Zhong Yang, Shi-Meng Cao, Yun-Ni Lei, Chu-Xiao Liu, Si-Kun Guo, Lin Shan, Man Wu, Xiao Tao, Jia-Lin Zhang, Xiang Gao, Jun Zhang, Jia Wei, Jinsong Li\*, Li Yang\*, Ling-Ling Chen\*. Screening for functional circular RNAs using the CRISPR-Cas13 system. 2020, xxxxxx**
+
+
+## License
+Copyright (C) 2019 YangLab. Licensed GPLv3 for open source use or contact YangLab (yanglab@@picb.ac.cn) for commercial use.
