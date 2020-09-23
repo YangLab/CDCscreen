@@ -3,4 +3,4 @@ A computational pipeline for **C**as13**d**-mediated **c**ircRNA **screen** (CDC
 
 
 ## Schema
-![image](https://github.com/xueweireally/CDCscreen/tree/master/doc/CDCscreen_pipeline.jpg)
+![image](https://github.com/xueweireally/CDCscreen/blob/master/doc/CDCscreen_pipeline.jpg)
