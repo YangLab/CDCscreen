@@ -69,7 +69,7 @@ sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt
     - D30_rep2_R2.fq, Fastq file of day 30 biology replicate 2 R2
 
 ### Output
-* 05_CDCscreen/06_CDCscreen_circRNA.txt
+* CDCscreen_circRNA.txt
 
 | Field       | Description                      |
 | :---------- | :--------------------------------|
