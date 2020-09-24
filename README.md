@@ -16,7 +16,7 @@ Maintainer: Wei Xue (xuewei@picb.ac.cn)
     - MAGeCK (version 0.5.9.2)
     - R (version 3.5.1)
 
-## Date requirements
+## Data requirements
 * Cas13d BSJ-gRNA reference sequences [mandatory]
     - ref_gRNA_seq.fa
 * Expression (FPBcirc) of circRNAs in examined cells [mandatory]
