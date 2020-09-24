@@ -51,12 +51,7 @@ sh run_CDCscreen_3_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.
 
 ## Example: *'run_CDCscreen_2_reps.sh'* is used for 2 biology replicates
 
-### 1. Usage
-```bash
-sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq
-```
-
-### 2. Input data [mandatory]
+### 1. Input data [mandatory]
 * Test Cas13d BSJ-gRNA reference sequences file is in directory of **'test_data'**
     - **[test_data/ref_gRNA_seq.fa](https://github.com/xueweireally/CDCscreen/blob/master/test_data/ref_gRNA_seq.fa)**
 
@@ -72,6 +67,11 @@ sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt
     - **D30_rep1_R2.fq** (FASTQ file of day 30 biology replicate 1 R2)
     - **D30_rep2_R1.fq** (FASTQ file of day 30 biology replicate 2 R1)
     - **D30_rep2_R2.fq** (FASTQ file of day 30 biology replicate 2 R2)
+
+### 2. Usage
+```bash
+sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq
+```
 
 ### 3. Output
 * **[test_data/CDCscreen_circRNA_293FT.txt](https://github.com/xueweireally/CDCscreen/blob/master/test_data/CDCscreen_circRNA_293FT.txt)** is output of CDCscreen pipeline in 293FT cells.
