@@ -48,6 +48,7 @@ sh run_CDCscreen_3_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.
 * **CDCscreen_circRNA.txt** is the result of CDCscreen pipeline.
 
 -----------------------------------
+
 ## Example: *'run_CDCscreen_2_reps.sh'* was used for 2 biology replicates
 
 ### 1. Usage
@@ -89,6 +90,7 @@ sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt
 ## Citation
 Siqi Li#, Xiang Li#, Wei Xue#, Lin Zhang#, Liang-Zhong Yang, Shi-Meng Cao, Yun-Ni Lei, Chu-Xiao Liu, Si-Kun Guo, Lin Shan, Man Wu, Xiao Tao, Jia-Lin Zhang, Xiang Gao, Jun Zhang, Jia Wei, Jinsong Li\*, Li Yang\*, Ling-Ling Chen\*. Screening for functional circular RNAs using the CRISPR-Cas13 system. 2020, xxxxxx
 
+-----------------------------------
 
 ## License
 Copyright (C) 2020 YangLab. Licensed GPLv3 for open source use or contact YangLab (yanglab@@picb.ac.cn) for commercial use.
