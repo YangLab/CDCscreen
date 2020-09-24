@@ -85,4 +85,4 @@ Siqi Li#, Xiang Li#, Wei Xue#, Lin Zhang#, Liang-Zhong Yang, Shi-Meng Cao, Yun-N
 
 
 ## License
-Copyright (C) 2019 YangLab. Licensed GPLv3 for open source use or contact YangLab (yanglab@@picb.ac.cn) for commercial use.
+Copyright (C) 2020 YangLab. Licensed GPLv3 for open source use or contact YangLab (yanglab@@picb.ac.cn) for commercial use.
