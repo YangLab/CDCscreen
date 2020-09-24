@@ -51,10 +51,10 @@ sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt
 ```
 
 ### 2. Input data [mandatory]
-* Test Cas13d BSJ-gRNA reference sequences file was in directory of test_data
+* Test Cas13d BSJ-gRNA reference sequences file was in directory of 'test_data'
     - *'test_data/ref_gRNA_seq.fa'*
 
-* Test expression (FPBcirc) of circRNAs of 293FT cells was in directory of test_data
+* Test expression (FPBcirc) of circRNAs of 293FT cells was in directory of 'test_data'
     - *'test_data/FPBcirc_293FT.txt'*
 
 * Test raw data (2 biology replicates of D1 and D30 in 293FT cells) were downloaded from NCBI GEO dataset (GSE149692) and National Omics Data Encyclopedia (OEP000889)
