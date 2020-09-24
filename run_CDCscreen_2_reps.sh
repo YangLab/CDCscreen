@@ -1,13 +1,40 @@
 #!/usr/bin/bash
-if [ ! $# = 8 ]; then
+if [ ! $# = 10 ]; then
     echo "Usage: `basename $0` ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq";
+    echo "[run_CDCscreen_2_reps.sh was used for 2 biology replicates]";
+    echo "";
+    echo "    Maintainer:";
+    echo "    Wei Xue (xuewei@picb.ac.cn)";
+    echo "";
+    echo "    Installation:";
+    echo "    git clone https://github.com/xueweireally/CDCscreen";
+    echo "";
+    echo "    Installation software requirements:";
+    echo "        - perl (version 5.26.2)";
+    echo "        - bowtie (version 1.1.2)";
+    echo "        - cutadapt (version 1.18)";
+    echo "        - samtools (version: 1.9)";
+    echo "        - MAGeCK (version 0.5.9.2)";
+    echo "        - R (version 3.5.1)";
+    echo "";
+    echo "    Date requirements:";
+    echo "      1. Cas13d BSJ-gRNA reference sequences [mandatory]";
+    echo "        - ref_gRNA_seq.fa";
+    echo "      2. Expression (FPBcirc) of circRNAs in examined cells [mandatory]";
+    echo "        - FPBcirc.txt";
+    echo "      3. Raw FASTQ files (Paired-End reads, 2 biology replicates of control [Day 1] and treatment [Day 30]) [mandatory]";
+    echo "        - Day 1 of biology replicate 1, D1_rep1_R1.fq and D1_rep1_R2.fq";
+    echo "        - Day 1 of biology replicate 2, D1_rep2_R1.fq and D1_rep2_R2.fq";
+    echo "        - Day 30 of biology replicate 1, D30_rep1_R1.fq and D30_rep1_R2.fq";
+    echo "        - Day 30 of biology replicate 2, D30_rep2_R1.fq and D30_rep2_R2.fq";
+    
     exit 0;
 fi
 
 # 0. bowtie-build index gRNA reference sequences (bowtie version 1.1.2)
 mkdir 00_ref_gRNA_seq
+cp $1 00_ref_gRNA_seq/ref_gRNA_seq.fa 
 cd 00_ref_gRNA_seq
-cp $1 ref_gRNA_seq.fa
 bowtie-build ref_gRNA_seq.fa ref_gRNA_seq
 
 cd ..
@@ -24,7 +51,7 @@ ln -s $6 01_D1_rep2_R2.fastq.gz
 ln -s $7 01_D30_rep1_R1.fastq.gz
 ln -s $8 01_D30_rep1_R2.fastq.gz
 ln -s $9 01_D30_rep2_R1.fastq.gz
-ln -s $10 01_D30_rep2_R2.fastq.gz
+ln -s ${10} 01_D30_rep2_R2.fastq.gz
 
 # 1.2 remove adapter sequences (cutadapt version 1.18)
 # For R1 3' (TTTTTTAAGCTTGGCGTAACTAGATCT), 5' (CCCTACCAACTGGTCGGGGTTTGAAAC)
@@ -69,6 +96,8 @@ cutadapt -a GTTTCAAACCCC -m 15 -o 02_D30_rep2_R2_rm3p.fq 01_D30_rep2_R2.fastq.gz
 # D30 rep2 R2 rm5p
 cutadapt -g AGATCTAGTTACGCCAAGCTTAAAAAA -m 15 -o 02_D30_rep2_R2_trimmed.fq 02_D30_rep2_R2_rm3p.fq
 
+rm 02_D1_rep1_R1_rm3p.fq 02_D1_rep1_R2_rm3p.fq 02_D1_rep2_R1_rm3p.fq 02_D1_rep2_R2_rm3p.fq 02_D30_rep1_R1_rm3p.fq 02_D30_rep1_R2_rm3p.fq 02_D30_rep2_R1_rm3p.fq 02_D30_rep2_R2_rm3p.fq
+
 cd ..
 
 
@@ -88,6 +117,10 @@ ls |grep "sam" |awk -F"." '{print "sort -u 03_"$1".txt > 04_"$1".txt"}' |sed 's/
 
 # 2.5 count sgRNA mapped reads
 ls |grep "sam" |awk -F"." '{print "cut -f 1 04_"$1".txt |sort |uniq -c |awk '\''{print $2""\"\\t""\"$1}'\'' > 05_"$1".txt"}' |sed 's/04_01/04/g' |sed 's/05_01/05/g' |sh
+
+rm 01_D1_rep1_R1_trimmed.sam 01_D1_rep1_R2_trimmed.sam 01_D1_rep2_R1_trimmed.sam 01_D1_rep2_R2_trimmed.sam 01_D30_rep1_R1_trimmed.sam 01_D30_rep1_R2_trimmed.sam 01_D30_rep2_R1_trimmed.sam 01_D30_rep2_R2_trimmed.sam
+rm 03_D1_rep1_R1_trimmed.txt 03_D1_rep1_R2_trimmed.txt 03_D1_rep2_R1_trimmed.txt 03_D1_rep2_R2_trimmed.txt 03_D30_rep1_R1_trimmed.txt 03_D30_rep1_R2_trimmed.txt 03_D30_rep2_R1_trimmed.txt 03_D30_rep2_R2_trimmed.txt
+rm 04_D1_rep1_R1_trimmed.txt 04_D1_rep1_R2_trimmed.txt 04_D1_rep2_R1_trimmed.txt 04_D1_rep2_R2_trimmed.txt 04_D30_rep1_R1_trimmed.txt 04_D30_rep1_R2_trimmed.txt 04_D30_rep2_R1_trimmed.txt 04_D30_rep2_R2_trimmed.txt
 
 cd ..
 
@@ -118,6 +151,8 @@ awk '{print $0"\t"($2+$3)/2"\t"($4+$5)/2}' 03_normalized_gRNA_reads.txt > 04_nor
 # 3.5 Fold change of rep1, rep2, and mean of rep1 + rep2
 awk '{FS="\t";OFS="\t"}{print $1,$2,$3,$4,$5,$6,$7,($4+0.01)/($2+0.01),($5+0.01)/($3+0.01),($7+0.01)/($6+0.01)}' 04_normalized_gRNA_reads_mean.txt |sort -k1,1 > 05_normalized_gRNA_FC.txt
 
+rm 02_mapped_reads.tmp
+
 cd ..
 
 
@@ -143,9 +178,9 @@ cd ..
 
 # 5. CDCscreen
 mkdir 05_CDCscreen
-cd 05_CDCscreen
 # 5.1 circRNA expression
-cp $2 01_FPBcirc.txt
+cp $2 05_CDCscreen/01_FPBcirc.txt
+cd 05_CDCscreen
 
 # 5.2 circRNA permutation test P value
 cp ../04_MAGeCK/04_mageck.gene_summary.txt 02_gene_summary.txt
@@ -165,6 +200,6 @@ perl ../join_ID.pl 04_join_FC_negP.txt 01_FPBcirc.txt 1 1 |awk '{if($5>0)print $
 Rscript ../CDCscreen_scale.R
 
 # 5.6 CDCscreen score ≥ 2 and ≥ negatively-selected gRNA with FC ≥ 0.667
-perl ../join_ID.pl 05_CDCscreen_score.txt 03_gRNA_FPBcirc.txt 1 1 |cut -f 1-4,6 |awk '{if($4>=2)print $1"\t"$5"\t"$4}' |sed 's/:/\t/g' |sed 's/|/\t/g' > 06_CDCscreen_circRNA.txt
+perl ../join_ID.pl 05_CDCscreen_score.txt 03_gRNA_FPBcirc.txt 1 1 |cut -f 1-4,6 |awk '{if($4>=2)print $1"\t"$5"\t"$4}' |sed 's/:/\t/g' |sed 's/|/\t/g' > ../CDCscreen_circRNA.txt
 
 cd ..
