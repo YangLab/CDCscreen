@@ -4,7 +4,7 @@ A computational pipeline for **C**as13**d**-mediated **c**ircRNA **screen** (**C
 -----------------------------------
 
 ## Schema
-![image](https://github.com/xueweireally/CDCscreen/blob/master/doc/CDCscreen_pipeline.jpg)
+![image](https://github.com/YangLab/CDCscreen/blob/master/doc/CDCscreen_pipeline.jpg)
 
 Maintainer: Wei Xue (xuewei@picb.ac.cn)
 
@@ -32,7 +32,7 @@ Maintainer: Wei Xue (xuewei@picb.ac.cn)
 
 ## Installation
 ```bash
-git clone https://github.com/xueweireally/CDCscreen
+git clone https://github.com/YangLab/CDCscreen.git
 ```
 
 ## Usage
@@ -54,11 +54,11 @@ sh run_CDCscreen_3_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.
 ## Example: *'run_CDCscreen_2_reps.sh'* is used for 2 biology replicates
 
 ### 1. Input data [mandatory]
-* Test Cas13d BSJ-gRNA reference sequences file is in directory of **'[test_data](https://github.com/xueweireally/CDCscreen/blob/master/test_data/)'**
-    - **[test_data/ref_gRNA_seq.fa](https://github.com/xueweireally/CDCscreen/blob/master/test_data/ref_gRNA_seq.fa)**
+* Test Cas13d BSJ-gRNA reference sequences file is in directory of **'[test_data](https://github.com/YangLab/CDCscreen/blob/master/test_data/)'**
+    - **[test_data/ref_gRNA_seq.fa](https://github.com/YangLab/CDCscreen/blob/master/test_data/ref_gRNA_seq.fa)**
 
-* Test expression (FPBcirc) of circRNAs of 293FT cells is in directory of **'[test_data](https://github.com/xueweireally/CDCscreen/blob/master/test_data/)'**. Ribo— RNA-seq raw data are downloaded from NCBI GEO dataset (GSE149691) and National Omics Data Encyclopedia (OEP000888)
-    - **[test_data/FPBcirc_293FT.txt](https://github.com/xueweireally/CDCscreen/blob/master/test_data/FPBcirc_293FT.txt)**
+* Test expression (FPBcirc) of circRNAs of 293FT cells is in directory of **'[test_data](https://github.com/YangLab/CDCscreen/blob/master/test_data/)'**. Ribo— RNA-seq raw data are downloaded from NCBI GEO dataset (GSE149691) and National Omics Data Encyclopedia (OEP000888)
+    - **[test_data/FPBcirc_293FT.txt](https://github.com/YangLab/CDCscreen/blob/master/test_data/FPBcirc_293FT.txt)**
 
 * Test raw data (2 biology replicates of D1 and D30 in 293FT cells) are downloaded from NCBI GEO dataset (GSE149692) and National Omics Data Encyclopedia (OEP000889)
     - **D1_rep1_R1.fq** (FASTQ file of day 1 biology replicate 1 R1)
@@ -76,7 +76,7 @@ sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt
 ```
 
 ### 3. Output
-* **[test_data/CDCscreen_circRNA_293FT.txt](https://github.com/xueweireally/CDCscreen/blob/master/test_data/CDCscreen_circRNA_293FT.txt)** is output of CDCscreen pipeline in 293FT cells.
+* **[test_data/CDCscreen_circRNA_293FT.txt](https://github.com/YangLab/CDCscreen/blob/master/test_data/CDCscreen_circRNA_293FT.txt)** is output of CDCscreen pipeline in 293FT cells.
 
 | Field       | Description                      |
 | :---------- | :--------------------------------|
