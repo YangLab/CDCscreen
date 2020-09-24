@@ -25,10 +25,10 @@ if [ ! $# = 10 ]; then
     echo "    2. Expression (FPBcirc) of circRNAs in examined cells [mandatory]";
     echo "      - FPBcirc.txt";
     echo "    3. Raw FASTQ files (Paired-End reads, 2 biology replicates of control [Day 1] and treatment [Day 30]) [mandatory]";
-    echo "      - Day 1 of biology replicate 1, D1_rep1_R1.fq and D1_rep1_R2.fq";
-    echo "      - Day 1 of biology replicate 2, D1_rep2_R1.fq and D1_rep2_R2.fq";
-    echo "      - Day 30 of biology replicate 1, D30_rep1_R1.fq and D30_rep1_R2.fq";
-    echo "      - Day 30 of biology replicate 2, D30_rep2_R1.fq and D30_rep2_R2.fq";    
+    echo "      - D1_rep1_R1.fq and D1_rep1_R2.fq (Day 1 of biology replicate 1)";
+    echo "      - D1_rep2_R1.fq and D1_rep2_R2.fq (Day 1 of biology replicate 2)";
+    echo "      - D30_rep1_R1.fq and D30_rep1_R2.fq (Day 30 of biology replicate 1)";
+    echo "      - D30_rep2_R1.fq and D30_rep2_R2.fq (Day 30 of biology replicate 2)";
     exit 0;
 fi
 
