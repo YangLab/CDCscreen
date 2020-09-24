@@ -35,12 +35,12 @@ git clone https://github.com/xueweireally/CDCscreen
 ```
 
 ## Usage
-### * *run_CDCscreen_2_reps.sh* was used for 2 biology replicates
+### *run_CDCscreen_2_reps.sh* was used for 2 biology replicates
 ```bash
 Usage: sh run_CDCscreen_2_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq
 ```
 
-### * *run_CDCscreen_3_reps.sh* was used for 3 biology replicates
+### *run_CDCscreen_3_reps.sh* was used for 3 biology replicates
 ```bash
 sh run_CDCscreen_3_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D1_rep3_R1.fq D1_rep3_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq D30_rep3_R1.fq D30_rep3_R2.fq
 ```
