@@ -20,11 +20,11 @@ Maintainer: Wei Xue (xuewei@picb.ac.cn)
     - R (version 3.5.1)
 
 ## Date requirements
-* Cas13d BSJ-gRNA reference sequences
+* Cas13d BSJ-gRNA reference sequences [mandatory]
     - ref_gRNA_seq.fa
-* 2. Expression (FPBcirc) of circRNAs in examined cells
+* 2. Expression (FPBcirc) of circRNAs in examined cells [mandatory]
     - FPBcirc.txt
-* 3. Raw FASTQ files (Paired-End, 2 biology replicates of control [Day 1] and treatment [Day 30])
+* 3. Raw FASTQ files (Paired-End, 2 biology replicates of control [Day 1] and treatment [Day 30]) [mandatory]
     - Day 1 of biology replicate 1, D1_rep1_R1.fq and D1_rep1_R2.fq
     - Day 1 of biology replicate 2, D1_rep2_R1.fq and D1_rep2_R2.fq
     - Day 30 of biology replicate 1, D30_rep1_R1.fq and D30_rep1_R2.fq
