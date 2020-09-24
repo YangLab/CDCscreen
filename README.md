@@ -72,7 +72,7 @@ sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt
     - **D30_rep2_R2.fq** (FASTQ file of day 30 biology replicate 2 R2)
 
 ### 3. Output
-* **test_data/[CDCscreen_circRNA_293FT.txt](https://github.com/xueweireally/CDCscreen/blob/master/test_data/CDCscreen_circRNA_293FT.txt)** is output of CDCscreen pipeline.
+* **test_data/[CDCscreen_circRNA_293FT.txt](https://github.com/xueweireally/CDCscreen/blob/master/test_data/CDCscreen_circRNA_293FT.txt)** is output of CDCscreen pipeline in 293FT cells.
 
 | Field       | Description                      |
 | :---------- | :--------------------------------|
