@@ -20,7 +20,7 @@ Maintainer: Wei Xue (xuewei@picb.ac.cn)
     - R (version 3.5.1)
 
 ## Date requirements
-* 1. Cas13d BSJ-gRNA reference sequences
+* Cas13d BSJ-gRNA reference sequences
     - ref_gRNA_seq.fa
 * 2. Expression (FPBcirc) of circRNAs in examined cells
     - FPBcirc.txt
@@ -36,13 +36,19 @@ git clone https://github.com/xueweireally/CDCscreen
 ```
 
 ## Usage
+* run_CDCscreen_2_reps.sh was used for 2 biology replicates
 ```bash
-Usage: sh run_CDCscreen.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq
+Usage: sh run_CDCscreen_2_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq
 ```
 
-### Example
+* run_CDCscreen_3_reps.sh was used for 3 biology replicates
 ```bash
-sh run_CDCscreen.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq
+sh run_CDCscreen_3_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D1_rep3_R1.fq D1_rep3_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq D30_rep3_R1.fq D30_rep3_R2.fq
+```
+
+### Example (run_CDCscreen_2_reps.sh was used for 2 biology replicates)
+```bash
+sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq
 ```
 
 ### Input
@@ -52,7 +58,7 @@ sh run_CDCscreen.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt D1_rep
 * Test expression (FPBcirc) of circRNAs of 293FT cells was in directory [test_data]
     - test_data/FPBcirc_293FT.txt
 
-* Test raw data (D1 and D30 of 293FT cells) were downloaded from NCBI GEO dataset (GES:xxxxxxx)
+* Test raw data (2 biology replicates of D1 and D30 in 293FT cells) were downloaded from NCBI GEO dataset (GES:xxxxxxx)
     - D1_rep1_R1.fq, Fastq file of day 1 biology replicate 1 R1
     - D1_rep1_R2.fq, Fastq file of day 1 biology replicate 1 R2
     - D1_rep2_R1.fq, Fastq file of day 1 biology replicate 2 R1
