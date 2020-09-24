@@ -20,7 +20,7 @@ Maintainer: Wei Xue (xuewei@picb.ac.cn)
 * Cas13d BSJ-gRNA reference sequences [mandatory]
     - **ref_gRNA_seq.fa**
 * Expression (FPBcirc) of circRNAs in examined cells [mandatory]
-    - **FPBcirc.txt**
+    - **FPBcirc.txt** (Ribo— RNA-seq dataset was generated with CLEAR (https://github.com/YangLab/CLEAR))
 * Raw FASTQ files (Paired-End reads, 2 biology replicates of control [Day 1] and treatment [Day 30]) [mandatory]
     - **D1_rep1_R1.fq** and **D1_rep1_R2.fq** (Day 1 of biology replicate 1) 
     - **D1_rep2_R1.fq** and **D1_rep2_R2.fq** (Day 1 of biology replicate 2)
