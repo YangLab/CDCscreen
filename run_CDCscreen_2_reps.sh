@@ -19,12 +19,12 @@ if [ ! $# = 10 ]; then
     echo "    - MAGeCK (version 0.5.9.2)";
     echo "    - R (version 3.5.1)";
     echo "";
-    echo "Date requirements:";
-    echo "    1. Cas13d BSJ-gRNA reference sequences [mandatory]";
+    echo "Date requirements: [mandatory]";
+    echo "    1. Cas13d BSJ-gRNA reference sequences";
     echo "      - ref_gRNA_seq.fa";
-    echo "    2. Expression (FPBcirc) of circRNAs in examined cells [mandatory]";
+    echo "    2. Expression (FPBcirc) of circRNAs in examined cells";
     echo "      - FPBcirc.txt (Ribo— RNA-seq dataset was generated with CLEAR [https://github.com/YangLab/CLEAR])";
-    echo "    3. Raw FASTQ files (Paired-End reads, 2 biology replicates of control [Day 1] and treatment [Day 30]) [mandatory]";
+    echo "    3. Raw FASTQ files (Paired-End reads, 2 biology replicates of control [Day 1] and treatment [Day 30], full path of raw data is recommended)";
     echo "      - D1_rep1_R1.fq and D1_rep1_R2.fq (Day 1 of biology replicate 1)";
     echo "      - D1_rep2_R1.fq and D1_rep2_R2.fq (Day 1 of biology replicate 2)";
     echo "      - D30_rep1_R1.fq and D30_rep1_R2.fq (Day 30 of biology replicate 1)";
