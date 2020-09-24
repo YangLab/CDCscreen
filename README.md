@@ -21,7 +21,7 @@ Maintainer: Wei Xue (xuewei@picb.ac.cn)
 * Cas13d BSJ-gRNA reference sequences
     - **ref_gRNA_seq.fa**
 * Expression (FPBcirc) of circRNAs in examined cells
-    - **FPBcirc.txt** (Ribo— RNA-seq dataset was generated with [CLEAR](https://github.com/YangLab/CLEAR))
+    - **FPBcirc.txt** (Ribo— RNA-seq dataset is generated with [CLEAR](https://github.com/YangLab/CLEAR))
 * Raw FASTQ files (Paired-End reads, 2 biology replicates of control [Day 1] and treatment [Day 30])
     - **D1_rep1_R1.fq** and **D1_rep1_R2.fq** (Day 1 of biology replicate 1) 
     - **D1_rep2_R1.fq** and **D1_rep2_R2.fq** (Day 1 of biology replicate 2)
@@ -34,12 +34,12 @@ git clone https://github.com/xueweireally/CDCscreen
 ```
 
 ## Usage
-### *'run_CDCscreen_2_reps.sh'* was used for 2 biology replicates
+### *'run_CDCscreen_2_reps.sh'* is used for 2 biology replicates
 ```bash
 sh run_CDCscreen_2_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq
 ```
 
-### *'run_CDCscreen_3_reps.sh'* was used for 3 biology replicates
+### *'run_CDCscreen_3_reps.sh'* is used for 3 biology replicates
 ```bash
 sh run_CDCscreen_3_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D1_rep3_R1.fq D1_rep3_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq D30_rep3_R1.fq D30_rep3_R2.fq
 ```
@@ -49,7 +49,7 @@ sh run_CDCscreen_3_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.
 
 -----------------------------------
 
-## Example: *'run_CDCscreen_2_reps.sh'* was used for 2 biology replicates
+## Example: *'run_CDCscreen_2_reps.sh'* is used for 2 biology replicates
 
 ### 1. Usage
 ```bash
@@ -57,13 +57,13 @@ sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt
 ```
 
 ### 2. Input data [mandatory]
-* Test Cas13d BSJ-gRNA reference sequences file was in directory of **'test_data'**
+* Test Cas13d BSJ-gRNA reference sequences file is in directory of **'test_data'**
     - **[test_data/ref_gRNA_seq.fa](https://github.com/xueweireally/CDCscreen/blob/master/test_data/ref_gRNA_seq.fa)**
 
-* Test expression (FPBcirc) of circRNAs of 293FT cells was in directory of **'test_data'**. Raw data Ribo— RNA-seq were downloaded from NCBI GEO dataset (GSE149691) and National Omics Data Encyclopedia (OEP000888)
+* Test expression (FPBcirc) of circRNAs of 293FT cells is in directory of **'test_data'**. Raw data Ribo— RNA-seq are downloaded from NCBI GEO dataset (GSE149691) and National Omics Data Encyclopedia (OEP000888)
     - **[test_data/FPBcirc_293FT.txt](https://github.com/xueweireally/CDCscreen/blob/master/test_data/FPBcirc_293FT.txt)**
 
-* Test raw data (2 biology replicates of D1 and D30 in 293FT cells) were downloaded from NCBI GEO dataset (GSE149692) and National Omics Data Encyclopedia (OEP000889)
+* Test raw data (2 biology replicates of D1 and D30 in 293FT cells) are downloaded from NCBI GEO dataset (GSE149692) and National Omics Data Encyclopedia (OEP000889)
     - **D1_rep1_R1.fq** (FASTQ file of day 1 biology replicate 1 R1)
     - **D1_rep1_R2.fq** (FASTQ file of day 1 biology replicate 1 R2)
     - **D1_rep2_R1.fq** (FASTQ file of day 1 biology replicate 2 R1)
