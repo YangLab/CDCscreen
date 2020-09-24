@@ -30,8 +30,7 @@ if [ ! $# = 14 ]; then
     echo "      - Day 1 of biology replicate 3, D1_rep3_R1.fq and D1_rep3_R2.fq";
     echo "      - Day 30 of biology replicate 1, D30_rep1_R1.fq and D30_rep1_R2.fq";
     echo "      - Day 30 of biology replicate 2, D30_rep2_R1.fq and D30_rep2_R2.fq";
-    echo "      - Day 30 of biology replicate 3, D30_rep3_R1.fq and D30_rep3_R2.fq";
-    
+    echo "      - Day 30 of biology replicate 3, D30_rep3_R1.fq and D30_rep3_R2.fq";    
     exit 0;
 fi
 
