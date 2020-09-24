@@ -46,12 +46,12 @@ Usage: sh run_CDCscreen_2_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_r
 sh run_CDCscreen_3_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D1_rep3_R1.fq D1_rep3_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq D30_rep3_R1.fq D30_rep3_R2.fq
 ```
 
-### Example (run_CDCscreen_2_reps.sh for example)
+## Example (run_CDCscreen_2_reps.sh for example)
 ```bash
 sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq
 ```
 
-### Input
+### Input data (run_CDCscreen_2_reps.sh for example)
 * Test Cas13d BSJ-gRNA reference sequences file was in directory of test_data
     - test_data/ref_gRNA_seq.fa
 
