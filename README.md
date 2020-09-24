@@ -59,33 +59,16 @@ sh run_CDCscreen.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt D1_rep
     - D30_rep2_R2.fq, Fastq file of day 30 biology replicate 2 R2
 
 ### Output
-* 05_CDCscreen/05_CDCscreen_score.txt
+* 05_CDCscreen/06_CDCscreen_circRNA.txt
 
-| Field       | Description                           |
-| :---------- | :------------------------------------ |
-| chrom       | Chromosome                            |
-| start       | Start of circular RNA                 |
-| end         | End of circular RNA                   |
-| name        | Circular RNA/Junction reads           |
-| score       | Flag of fusion junction realignment   |
-| strand      | + or - for strand                     |
-| thickStart  | No meaning                            |
-| thickEnd    | No meaning                            |
-| itemRgb     | 0,0,0                                 |
-| exonCount   | Number of exons                       |
-| exonSizes   | Exon sizes                            |
-| exonOffsets | Exon offsets                          |
-| readNumber  | Number of junction reads              |
-| circType    | Type of circular RNA                  |
-| geneName    | Name of gene                          |
-| isoformName | Name of isoform                       |
-| index       | Index of exon or intron               |
-| flankIntron | Left intron/Right intron              |
-| FPBcirc     | Expression of circRNA                 |
-| FPBlinear   | Expression of cognate linear RNA      |
-| CIRCscore   | Relative expression of circRNA        |
-
-
+| Field       | Description                      |
+| :---------- | :--------------------------------|
+| chrom       | Chromosome                       |
+| start       | Start of circRNA                 |
+| end         | End of circRNA                   |
+| geneName    | Gene symbol of circRNA           |
+| FPBcirc     | Expression of circRNA            |
+| CDCscreen   | CDCscreen score of circRNA       |
 
 
 ## Citation
