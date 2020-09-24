@@ -24,8 +24,7 @@ Maintainer: Wei Xue (xuewei@picb.ac.cn)
     - **ref_gRNA_seq.fa**
 * Expression (FPBcirc) of circRNAs in examined cells
     - **FPBcirc.txt** (FPBcirc of circRNA is calculated with [CLEAR](https://github.com/YangLab/CLEAR))
-* Raw FASTQ files (Paired-End reads, 2 biology replicates of control [Day 1] and treatment [Day 30])
-#### Full path of raw data is recommended
+* Raw FASTQ files (Paired-End reads, 2 biology replicates of control [Day 1] and treatment [Day 30], **full path of raw data is recommended**)
     - **D1_rep1_R1.fq** and **D1_rep1_R2.fq** (Day 1 of biology replicate 1) 
     - **D1_rep2_R1.fq** and **D1_rep2_R2.fq** (Day 1 of biology replicate 2)
     - **D30_rep1_R1.fq** and **D30_rep1_R2.fq** (Day 30 of biology replicate 1)
@@ -61,8 +60,7 @@ sh run_CDCscreen_3_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.
 * Test expression (FPBcirc) of circRNAs of 293FT cells is in directory of **'[test_data](https://github.com/YangLab/CDCscreen/blob/master/test_data/)'**. Ribo— RNA-seq raw data are downloaded from NCBI GEO dataset (GSE149691) and National Omics Data Encyclopedia (OEP000888).
     - **[test_data/FPBcirc_293FT.txt](https://github.com/YangLab/CDCscreen/blob/master/test_data/FPBcirc_293FT.txt)**
 
-* Test raw data (2 biology replicates of D1 and D30 in 293FT cells) are downloaded from NCBI GEO dataset (GSE149692) and National Omics Data Encyclopedia (OEP000889)
-#### Full path of raw data is recommended
+* Test raw data (2 biology replicates of D1 and D30 in 293FT cells) are downloaded from NCBI GEO dataset (GSE149692) and National Omics Data Encyclopedia (OEP000889). **Full path of raw data is recommended**.
     - **D1_rep1_R1.fq** (FASTQ file of day 1 biology replicate 1 R1)
     - **D1_rep1_R2.fq** (FASTQ file of day 1 biology replicate 1 R2)
     - **D1_rep2_R1.fq** (FASTQ file of day 1 biology replicate 2 R1)
