@@ -33,17 +33,17 @@ git clone https://github.com/xueweireally/CDCscreen
 ```
 
 ## Usage
-### *run_CDCscreen_2_reps.sh* was used for 2 biology replicates
+### *'run_CDCscreen_2_reps.sh'* was used for 2 biology replicates
 ```bash
 sh run_CDCscreen_2_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq
 ```
 
-### *run_CDCscreen_3_reps.sh* was used for 3 biology replicates
+### *'run_CDCscreen_3_reps.sh'* was used for 3 biology replicates
 ```bash
 sh run_CDCscreen_3_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D1_rep3_R1.fq D1_rep3_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq D30_rep3_R1.fq D30_rep3_R2.fq
 ```
 
-## Example: *run_CDCscreen_2_reps.sh* was used for 2 biology replicates
+## Example: *'run_CDCscreen_2_reps.sh'* was used for 2 biology replicates
 
 ### 1. Usage
 ```bash
@@ -52,23 +52,23 @@ sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt
 
 ### 2. Input data [mandatory]
 * Test Cas13d BSJ-gRNA reference sequences file was in directory of test_data
-    - *test_data/ref_gRNA_seq.fa*
+    - *'test_data/ref_gRNA_seq.fa'*
 
 * Test expression (FPBcirc) of circRNAs of 293FT cells was in directory of test_data
-    - *test_data/FPBcirc_293FT.txt*
+    - *'test_data/FPBcirc_293FT.txt'*
 
 * Test raw data (2 biology replicates of D1 and D30 in 293FT cells) were downloaded from NCBI GEO dataset (GSE149692) and National Omics Data Encyclopedia (OEP000889)
-    - *D1_rep1_R1.fq* (FASTQ file of day 1 biology replicate 1 R1)
-    - *D1_rep1_R2.fq* (FASTQ file of day 1 biology replicate 1 R2)
-    - *D1_rep2_R1.fq* (FASTQ file of day 1 biology replicate 2 R1)
-    - *D1_rep2_R2.fq* (FASTQ file of day 1 biology replicate 2 R2)
-    - *D30_rep1_R1.fq* (FASTQ file of day 30 biology replicate 1 R1)
-    - *D30_rep1_R2.fq* (FASTQ file of day 30 biology replicate 1 R2)
-    - *D30_rep2_R1.fq* (FASTQ file of day 30 biology replicate 2 R1)
-    - *D30_rep2_R2.fq* (FASTQ file of day 30 biology replicate 2 R2)
+    - *'D1_rep1_R1.fq'* (FASTQ file of day 1 biology replicate 1 R1)
+    - *'D1_rep1_R2.fq'* (FASTQ file of day 1 biology replicate 1 R2)
+    - *'D1_rep2_R1.fq'* (FASTQ file of day 1 biology replicate 2 R1)
+    - *'D1_rep2_R2.fq'* (FASTQ file of day 1 biology replicate 2 R2)
+    - *'D30_rep1_R1.fq'* (FASTQ file of day 30 biology replicate 1 R1)
+    - *'D30_rep1_R2.fq'* (FASTQ file of day 30 biology replicate 1 R2)
+    - *'D30_rep2_R1.fq'* (FASTQ file of day 30 biology replicate 2 R1)
+    - *'D30_rep2_R2.fq'* (FASTQ file of day 30 biology replicate 2 R2)
 
 ### Output
-* *CDCscreen_circRNA.txt*
+* **'CDCscreen_circRNA.txt'**
 
 | Field       | Description                      |
 | :---------- | :--------------------------------|
