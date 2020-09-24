@@ -23,7 +23,7 @@ if [ ! $# = 10 ]; then
     echo "    1. Cas13d BSJ-gRNA reference sequences [mandatory]";
     echo "      - ref_gRNA_seq.fa";
     echo "    2. Expression (FPBcirc) of circRNAs in examined cells [mandatory]";
-    echo "      - FPBcirc.txt";
+    echo "      - FPBcirc.txt (Ribo— RNA-seq dataset was generated with CLEAR [https://github.com/YangLab/CLEAR])";
     echo "    3. Raw FASTQ files (Paired-End reads, 2 biology replicates of control [Day 1] and treatment [Day 30]) [mandatory]";
     echo "      - D1_rep1_R1.fq and D1_rep1_R2.fq (Day 1 of biology replicate 1)";
     echo "      - D1_rep2_R1.fq and D1_rep2_R2.fq (Day 1 of biology replicate 2)";
