@@ -58,17 +58,17 @@ sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt
     - **'test_data/FPBcirc_293FT.txt'**
 
 * Test raw data (2 biology replicates of D1 and D30 in 293FT cells) were downloaded from NCBI GEO dataset (GSE149692) and National Omics Data Encyclopedia (OEP000889)
-    - **'D1_rep1_R1.fq'** (FASTQ file of day 1 biology replicate 1 R1)
-    - **'D1_rep1_R2.fq'** (FASTQ file of day 1 biology replicate 1 R2)
-    - **'D1_rep2_R1.fq'** (FASTQ file of day 1 biology replicate 2 R1)
-    - **'D1_rep2_R2.fq'** (FASTQ file of day 1 biology replicate 2 R2)
-    - **'D30_rep1_R1.fq'** (FASTQ file of day 30 biology replicate 1 R1)
-    - **'D30_rep1_R2.fq'** (FASTQ file of day 30 biology replicate 1 R2)
-    - **'D30_rep2_R1.fq'** (FASTQ file of day 30 biology replicate 2 R1)
-    - **'D30_rep2_R2.fq'** (FASTQ file of day 30 biology replicate 2 R2)
+    - **D1_rep1_R1.fq** (FASTQ file of day 1 biology replicate 1 R1)
+    - **D1_rep1_R2.fq** (FASTQ file of day 1 biology replicate 1 R2)
+    - **D1_rep2_R1.fq** (FASTQ file of day 1 biology replicate 2 R1)
+    - **D1_rep2_R2.fq** (FASTQ file of day 1 biology replicate 2 R2)
+    - **D30_rep1_R1.fq** (FASTQ file of day 30 biology replicate 1 R1)
+    - **D30_rep1_R2.fq** (FASTQ file of day 30 biology replicate 1 R2)
+    - **D30_rep2_R1.fq** (FASTQ file of day 30 biology replicate 2 R1)
+    - **D30_rep2_R2.fq** (FASTQ file of day 30 biology replicate 2 R2)
 
-### Output
-* **'CDCscreen_circRNA.txt'**
+### 3. Output
+* **CDCscreen_circRNA.txt**
 
 | Field       | Description                      |
 | :---------- | :--------------------------------|
