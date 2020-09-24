@@ -1,32 +1,34 @@
 #!/usr/bin/bash
 if [ ! $# = 10 ]; then
-    echo "Usage: `basename $0` ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq";
-    echo "[run_CDCscreen_2_reps.sh was used for 2 biology replicates]";
+    echo "### `basename $0` was used for 2 biology replicates ###";
     echo "";
-    echo "    Maintainer:";
+    echo "Usage:";
+    echo "    `basename $0` ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.fq D1_rep2_R1.fq D1_rep2_R2.fq D30_rep1_R1.fq D30_rep1_R2.fq D30_rep2_R1.fq D30_rep2_R2.fq";
+    echo "";
+    echo "Maintainer:";
     echo "    Wei Xue (xuewei@picb.ac.cn)";
     echo "";
-    echo "    Installation:";
+    echo "Installation:";
     echo "    git clone https://github.com/xueweireally/CDCscreen";
     echo "";
-    echo "    Installation software requirements:";
-    echo "        - perl (version 5.26.2)";
-    echo "        - bowtie (version 1.1.2)";
-    echo "        - cutadapt (version 1.18)";
-    echo "        - samtools (version: 1.9)";
-    echo "        - MAGeCK (version 0.5.9.2)";
-    echo "        - R (version 3.5.1)";
+    echo "Installation software requirements:";
+    echo "    - perl (version 5.26.2)";
+    echo "    - bowtie (version 1.1.2)";
+    echo "    - cutadapt (version 1.18)";
+    echo "    - samtools (version: 1.9)";
+    echo "    - MAGeCK (version 0.5.9.2)";
+    echo "    - R (version 3.5.1)";
     echo "";
-    echo "    Date requirements:";
-    echo "      1. Cas13d BSJ-gRNA reference sequences [mandatory]";
-    echo "        - ref_gRNA_seq.fa";
-    echo "      2. Expression (FPBcirc) of circRNAs in examined cells [mandatory]";
-    echo "        - FPBcirc.txt";
-    echo "      3. Raw FASTQ files (Paired-End reads, 2 biology replicates of control [Day 1] and treatment [Day 30]) [mandatory]";
-    echo "        - Day 1 of biology replicate 1, D1_rep1_R1.fq and D1_rep1_R2.fq";
-    echo "        - Day 1 of biology replicate 2, D1_rep2_R1.fq and D1_rep2_R2.fq";
-    echo "        - Day 30 of biology replicate 1, D30_rep1_R1.fq and D30_rep1_R2.fq";
-    echo "        - Day 30 of biology replicate 2, D30_rep2_R1.fq and D30_rep2_R2.fq";
+    echo "Date requirements:";
+    echo "    1. Cas13d BSJ-gRNA reference sequences [mandatory]";
+    echo "      - ref_gRNA_seq.fa";
+    echo "    2. Expression (FPBcirc) of circRNAs in examined cells [mandatory]";
+    echo "      - FPBcirc.txt";
+    echo "    3. Raw FASTQ files (Paired-End reads, 2 biology replicates of control [Day 1] and treatment [Day 30]) [mandatory]";
+    echo "      - Day 1 of biology replicate 1, D1_rep1_R1.fq and D1_rep1_R2.fq";
+    echo "      - Day 1 of biology replicate 2, D1_rep2_R1.fq and D1_rep2_R2.fq";
+    echo "      - Day 30 of biology replicate 1, D30_rep1_R1.fq and D30_rep1_R2.fq";
+    echo "      - Day 30 of biology replicate 2, D30_rep2_R1.fq and D30_rep2_R2.fq";
     
     exit 0;
 fi
