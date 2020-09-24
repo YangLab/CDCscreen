@@ -8,6 +8,8 @@ A computational pipeline for **C**as13**d**-mediated **c**ircRNA **screen** (**C
 
 Maintainer: Wei Xue (xuewei@picb.ac.cn)
 
+-----------------------------------
+
 ## Installation requirements [mandatory]
 * Software
     - perl (version 5.26.2)
