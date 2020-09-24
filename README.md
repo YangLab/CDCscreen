@@ -44,7 +44,7 @@ sh run_CDCscreen_3_reps.sh ref_gRNA_seq.fa FPBcirc.txt D1_rep1_R1.fq D1_rep1_R2.
 ```
 
 ## Output
-* **CDCscreen_circRNA.txt**
+* **CDCscreen_circRNA.txt** is the result of CDCscreec pipeline.
 
 -----------------------------------
 ## Example: *'run_CDCscreen_2_reps.sh'* was used for 2 biology replicates
