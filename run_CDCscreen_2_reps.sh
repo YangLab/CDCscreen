@@ -9,7 +9,7 @@ if [ ! $# = 10 ]; then
     echo "    Wei Xue (xuewei@picb.ac.cn)";
     echo "";
     echo "Installation:";
-    echo "    git clone https://github.com/xueweireally/CDCscreen";
+    echo "    git clone https://github.com/YangLab/CDCscreen.git";
     echo "";
     echo "Installation software requirements:";
     echo "    - perl (version 5.26.2)";
