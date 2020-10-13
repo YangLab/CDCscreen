@@ -145,7 +145,7 @@ ls |grep "sam" |awk -F"." '{print "sort -u 03_"$1".txt > 04_"$1".txt"}' |sed 's/
 # 2.5 count sgRNA mapped reads
 ls |grep "sam" |awk -F"." '{print "cut -f 1 04_"$1".txt |sort |uniq -c |awk '\''{print $2""\"\\t""\"$1}'\'' > 05_"$1".txt"}' |sed 's/04_01/04/g' |sed 's/05_01/05/g' |sh
 
-rm 01_D1_rep1_R1_trimmed.sam 01_D1_rep1_R2_trimmed.sam 01_D1_rep2_R1_trimmed.sam 01_D1_rep2_R2_trimmed.sam 01_D1_rep3_R1_trimmed.sam 01_D1_rep3_R2_trimmed.sam01_D30_rep1_R1_trimmed.sam 01_D30_rep1_R2_trimmed.sam 01_D30_rep2_R1_trimmed.sam 01_D30_rep2_R2_trimmed.sam 01_D30_rep3_R1_trimmed.sam 01_D30_rep3_R2_trimmed.sam
+rm 01_D1_rep1_R1_trimmed.sam 01_D1_rep1_R2_trimmed.sam 01_D1_rep2_R1_trimmed.sam 01_D1_rep2_R2_trimmed.sam 01_D1_rep3_R1_trimmed.sam 01_D1_rep3_R2_trimmed.sam 01_D30_rep1_R1_trimmed.sam 01_D30_rep1_R2_trimmed.sam 01_D30_rep2_R1_trimmed.sam 01_D30_rep2_R2_trimmed.sam 01_D30_rep3_R1_trimmed.sam 01_D30_rep3_R2_trimmed.sam
 rm 03_D1_rep1_R1_trimmed.txt 03_D1_rep1_R2_trimmed.txt 03_D1_rep2_R1_trimmed.txt 03_D1_rep2_R2_trimmed.txt 03_D1_rep3_R1_trimmed.txt 03_D1_rep3_R2_trimmed.txt 03_D30_rep1_R1_trimmed.txt 03_D30_rep1_R2_trimmed.txt 03_D30_rep2_R1_trimmed.txt 03_D30_rep2_R2_trimmed.txt 03_D30_rep3_R1_trimmed.txt 03_D30_rep3_R2_trimmed.txt
 rm 04_D1_rep1_R1_trimmed.txt 04_D1_rep1_R2_trimmed.txt 04_D1_rep2_R1_trimmed.txt 04_D1_rep2_R2_trimmed.txt 04_D1_rep3_R1_trimmed.txt 04_D1_rep3_R2_trimmed.txt 04_D30_rep1_R1_trimmed.txt 04_D30_rep1_R2_trimmed.txt 04_D30_rep2_R1_trimmed.txt 04_D30_rep2_R2_trimmed.txt 04_D30_rep3_R1_trimmed.txt 04_D30_rep3_R2_trimmed.txt
 
