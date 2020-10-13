@@ -41,7 +41,7 @@ bowtie-build ref_gRNA_seq.fa ref_gRNA_seq
 cd ..
 
 
-# 1.1 ln -s D1 rep1 and rep2, and D30 rep1 and rep2 fastq(or fastq.gz)
+# 1.1 ln -s D1 rep1 and rep2, and D30 rep1 and rep2 fastq (or fastq.gz)
 mkdir 01_gRNA_DNA_seq
 cd 01_gRNA_DNA_seq
 ln -s $3 01_D1_rep1_R1.fastq.gz
