@@ -90,7 +90,7 @@ sh run_CDCscreen_2_reps.sh test_data/ref_gRNA_seq.fa test_data/FPBcirc_293FT.txt
 -----------------------------------
 
 ## Citation
-Siqi Li#, Xiang Li#, Wei Xue#, Lin Zhang#, Liang-Zhong Yang, Shi-Meng Cao, Yun-Ni Lei, Chu-Xiao Liu, Si-Kun Guo, Lin Shan, Man Wu, Xiao Tao, Jia-Lin Zhang, Xiang Gao, Jun Zhang, Jia Wei, Jinsong Li\*, Li Yang\*, Ling-Ling Chen\*. Screening for functional circular RNAs using the CRISPR-Cas13 system. 2020, xxxxxx
+**[Siqi Li#, Xiang Li#, Wei Xue#, Lin Zhang#, Liang-Zhong Yang, Shi-Meng Cao, Yun-Ni Lei, Chu-Xiao Liu, Si-Kun Guo, Lin Shan, Man Wu, Xiao Tao, Jia-Lin Zhang, Xiang Gao, Jun Zhang, Jia Wei, Jinsong Li\*, Li Yang\*, Ling-Ling Chen\*. Screening for functional circular RNAs using the CRISPR-Cas13 system. Nat Methods, 2020](https://www.nature.com/articles/s41592-020-01011-4).**
 
 -----------------------------------
 
